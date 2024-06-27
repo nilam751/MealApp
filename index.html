@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meal Search App</title>        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">     
+    </head>
+    <body>
+        <div id="divMain" class="position-relative">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="meallist.html">My Favorite</a></li>
+                </ul>
+            </nav> 
+            <div id="divTop">                                       
+                <input id="txtSearch" type="text" list="datalist" placeholder="Search here..." onkeyup="autoSearch(this.value)">
+                <datalist id="datalist">                     
+                </datalist>            
+                <input type="button" id="btnSearch" >
+            </div>
+            <div id="divList"> </div>
+        </div> 
+    </body>
+    <script src="script.js"></script>
+     
+</html>
